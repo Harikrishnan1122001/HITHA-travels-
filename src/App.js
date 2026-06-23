@@ -6,6 +6,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import WhyChooseUs from './components/WhyChooseUs';
 import './App.css';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Hero />
         <About />
         <Services />
+        <WhyChooseUs />
         <Contact />
       </main>
       <Footer />
