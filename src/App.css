@@ -1,8 +1,6 @@
 .App {
   position: relative;
 }
-
-/* WhatsApp FAB */
 .whatsapp-fab {
   position: fixed;
   bottom: 32px;
