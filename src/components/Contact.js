@@ -497,9 +497,9 @@ import emailjs from '@emailjs/browser';
 
 // ─────────────────────────────────────────────
 // EMAILJS CONFIG — replace these 3 values
-const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';
-const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
+const EMAILJS_PUBLIC_KEY  = '5koff7Zp6wLXda_Ct';
+const EMAILJS_SERVICE_ID  = 'service_bf0a5w5';
+const EMAILJS_TEMPLATE_ID = '-xdIrXDUK6gZanmCePapr';
 // ─────────────────────────────────────────────
 
 const WHATSAPP_NUMBER = '919585085252';
