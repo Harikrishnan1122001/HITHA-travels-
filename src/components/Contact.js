@@ -1,3 +1,176 @@
+// // import React, { useEffect, useRef, useState } from 'react';
+// // import './Contact.css';
+// // const Contact = () => {
+// //   const sectionRef = useRef(null);
+// //   const [form, setForm] = useState({ name: '', phone: '', service: '', message: '' });
+// //   const [submitted, setSubmitted] = useState(false);
+// //   useEffect(() => {
+// //     const observer = new IntersectionObserver(
+// //       (entries) => entries.forEach(e => {
+// //         if (e.isIntersecting) e.target.classList.add('visible');
+// //       }),
+// //       { threshold: 0.1 }
+// //     );
+// //     const els = sectionRef.current?.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+// //     els?.forEach(el => observer.observe(el));
+// //     return () => observer.disconnect();
+// //   }, []);
+// //   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
+// //   const handleSubmit = (e) => {
+// //     e.preventDefault();
+// //     setSubmitted(true);
+// //     setTimeout(() => setSubmitted(false), 4000);
+// //     setForm({ name: '', phone: '', service: '', message: '' });
+// //   };
+// //   const contactInfo = [
+// //     // {
+// //     //   icon: '📍',
+// //     //   title: 'Location',
+// //     //   lines: ['9A, Dindigul Main Rd,', 'Vilangudi, Madurai - 625018'],
+// //     //   link: 'https://maps.google.com/?q=9A+Dindigul+Main+Rd+Vilangudi+Madurai',
+// //     // },
+// //     {
+// //       icon: '📞',
+// //       title: 'Phone',
+// //       lines: ['+91 9585085252'],
+// //       link: 'tel:+919585085252',
+// //     },
+// //     {
+// //       icon: '✉️',
+// //       title: 'Email',
+// //       lines: ['hithatourstravels@gmail.com', 'booking@hithatravels.com'],
+// //       link: 'mailto:hithatourstravels@gmail.com',
+// //     },
+// //     {
+// //       icon: '🕐',
+// //       title: 'Working Hours',
+// //       lines: ['24/7 Available', 'No holidays'],
+// //       link: null,
+// //     },
+// //   ];
+// //   return (
+// //     <section id="contact" className="contact-section" ref={sectionRef}>
+// //       {/* Top divider */}
+// //       <div className="contact-divider">
+// //         <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+// //           <path d="M0,0 L1440,40 L1440,60 L0,60 Z" fill="#0A0A0A"/>
+// //         </svg>
+// //       </div>
+// //       <div className="contact-container">
+// //         <div className="section-header reveal">
+// //           <span className="section-eyebrow">Get In Touch</span>
+// //           <h2 className="section-title display-font">
+// //             Book Your <span className="text-gold">Ride Today</span>
+// //           </h2>
+// //           <p className="section-subtitle">
+// //             Reach out to us for bookings, enquiries, or custom tour planning. 
+// //             We respond within minutes!
+// //           </p>
+// //         </div>
+// //         <div className="contact-body">
+// //           {/* Info cards */}
+// //           <div className="contact-info reveal-left">
+// //             {contactInfo.map((c, i) => (
+// //               <div key={i} className="info-card" style={{ transitionDelay: `${i * 0.1}s` }}>
+// //                 <span className="info-icon">{c.icon}</span>
+// //                 <div className="info-content">
+// //                   <strong>{c.title}</strong>
+// //                   {c.lines.map((l, j) => (
+// //                     c.link && j === 0
+// //                       ? <a key={j} href={c.link} className="info-link" target="_blank" rel="noopener noreferrer">{l}</a>
+// //                       : <span key={j}>{l}</span>
+// //                   ))}
+// //                 </div>
+// //               </div>
+// //             ))}
+// //             {/* Social */}
+// //             <div className="social-row">
+// //               {['Facebook', 'Instagram', 'WhatsApp'].map((s, i) => (
+// //                 <a key={i} href="#!" className="social-btn" aria-label={s}>
+// //                   {s === 'WhatsApp' ? '💬' : s === 'Instagram' ? '📸' : '👍'}
+// //                   <span>{s}</span>
+// //                 </a>
+// //               ))}
+// //             </div>
+           
+// //           </div>
+// //           {/* Form */}
+// //           <div className="contact-form-wrap reveal-right">
+// //             {submitted ? (
+// //               <div className="success-msg">
+// //                 <span className="success-icon">✅</span>
+// //                 <h3>Booking Request Sent!</h3>
+// //                 <p>Our team will contact you within 10 minutes. Thank you for choosing Hitha Travels!</p>
+// //               </div>
+// //             ) : (
+// //               <form className="contact-form" onSubmit={handleSubmit}>
+// //                 <h3 className="form-title">Quick Booking</h3>
+// //                 <div className="form-grid">
+// //                   <div className="form-group">
+// //                     <label>Your Name *</label>
+// //                     <input
+// //                       type="text"
+// //                       name="name"
+// //                       value={form.name}
+// //                       onChange={handleChange}
+// //                       placeholder="Enter your name"
+// //                       required
+// //                     />
+// //                   </div>
+// //                   <div className="form-group">
+// //                     <label>Phone Number *</label>
+// //                     <input
+// //                       type="tel"
+// //                       name="phone"
+// //                       value={form.phone}
+// //                       onChange={handleChange}
+// //                       placeholder="+91 9585085252"
+// //                       required
+// //                     />
+// //                   </div>
+// //                   <div className="form-group full-width">
+// //                     <label>Service Required *</label>
+// //                     <select name="service" value={form.service} onChange={handleChange} required>
+// //                       <option value="">Select a service</option>
+// //                       <option> Local Acting Driver</option>
+// //                       <option>Outstation Acting Driver</option>
+// //                       <option> Night Duty Driver</option>
+// //                       <option>One-Way Drop</option>
+// //                       <option>Event & Wedding Driver</option>
+// //                       <option>Corporate & Business Driver</option>
+// //                       <option>Monthly / Long-Term Driver</option>
+
+// //                     </select>
+// //                   </div>
+// //                   <div className="form-group full-width">
+// //                     <label>Message / Trip Details</label>
+// //                     <textarea
+// //                       name="message"
+// //                       value={form.message}
+// //                       onChange={handleChange}
+// //                       placeholder="Describe your trip: pickup, destination, date, number of passengers..."
+// //                       rows={5}
+// //                     ></textarea>
+// //                   </div>
+// //                 </div>
+// //                 <button type="submit" className="submit-btn">
+// //                   Send Booking Request
+// //                   <span className="btn-arrow">→</span>
+// //                 </button>
+// //                 <p className="form-note">
+// //                   🔒 Your details are safe with us. We'll never spam you.
+// //                 </p>
+// //               </form>
+// //             )}
+// //           </div>
+// //         </div>
+// //       </div>
+// //     </section>
+// //   );
+// // };
+// // export default Contact;
+
+
 // import React, { useEffect, useRef, useState } from 'react';
 // import './Contact.css';
 // const Contact = () => {
@@ -18,17 +191,26 @@
 //   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 //   const handleSubmit = (e) => {
 //     e.preventDefault();
+
+//     const subject = `New Booking Request from ${form.name}`;
+//     const body =
+// `New Booking Request - Hitha Tours and Travels
+// ==============================================
+// Name    : ${form.name}
+// Phone   : ${form.phone}
+// Service : ${form.service}
+// Message : ${form.message}
+// ==============================================
+// Sent from website contact form.`;
+
+//     const mailtoLink = `mailto:hithatourstravels@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+//     window.open(mailtoLink, '_blank');
+
 //     setSubmitted(true);
 //     setTimeout(() => setSubmitted(false), 4000);
 //     setForm({ name: '', phone: '', service: '', message: '' });
 //   };
 //   const contactInfo = [
-//     // {
-//     //   icon: '📍',
-//     //   title: 'Location',
-//     //   lines: ['9A, Dindigul Main Rd,', 'Vilangudi, Madurai - 625018'],
-//     //   link: 'https://maps.google.com/?q=9A+Dindigul+Main+Rd+Vilangudi+Madurai',
-//     // },
 //     {
 //       icon: '📞',
 //       title: 'Phone',
@@ -38,7 +220,7 @@
 //     {
 //       icon: '✉️',
 //       title: 'Email',
-//       lines: ['hithatourstravels@gmail.com', 'booking@hithatravels.com'],
+//       lines: ['hithatourstravels@gmail.com'],
 //       link: 'mailto:hithatourstravels@gmail.com',
 //     },
 //     {
@@ -48,6 +230,28 @@
 //       link: null,
 //     },
 //   ];
+
+//   const socialLinks = [
+//     {
+//       name: 'Facebook',
+//       icon: '👍',
+//       url: 'https://www.facebook.com/profile.php?id=61590282911943',
+//       label: 'Follow on Facebook',
+//     },
+//     {
+//       name: 'Instagram',
+//       icon: '📸',
+//       url: 'https://www.instagram.com/hitha_tours_travels/',
+//       label: 'Follow on Instagram',
+//     },
+//     {
+//       name: 'WhatsApp',
+//       icon: '💬',
+//       url: 'https://wa.me/919585085252?text=Hello%2C%20I%20would%20like%20to%20book%20a%20driver%20from%20Hitha%20Tours%20and%20Travels.',
+//       label: 'Chat on WhatsApp',
+//     },
+//   ];
+
 //   return (
 //     <section id="contact" className="contact-section" ref={sectionRef}>
 //       {/* Top divider */}
@@ -63,7 +267,7 @@
 //             Book Your <span className="text-gold">Ride Today</span>
 //           </h2>
 //           <p className="section-subtitle">
-//             Reach out to us for bookings, enquiries, or custom tour planning. 
+//             Reach out to us for bookings, enquiries, or custom tour planning.
 //             We respond within minutes!
 //           </p>
 //         </div>
@@ -83,24 +287,47 @@
 //                 </div>
 //               </div>
 //             ))}
-//             {/* Social */}
+
+//             {/* Social Links with real URLs */}
 //             <div className="social-row">
-//               {['Facebook', 'Instagram', 'WhatsApp'].map((s, i) => (
-//                 <a key={i} href="#!" className="social-btn" aria-label={s}>
-//                   {s === 'WhatsApp' ? '💬' : s === 'Instagram' ? '📸' : '👍'}
-//                   <span>{s}</span>
+//               {socialLinks.map((s, i) => (
+//                 <a
+//                   key={i}
+//                   href={s.url}
+//                   className="social-btn"
+//                   aria-label={s.label}
+//                   target="_blank"
+//                   rel="noopener noreferrer"
+//                   title={s.label}
+//                 >
+//                   <span className="social-icon">{s.icon}</span>
+//                   <span>{s.name}</span>
 //                 </a>
 //               ))}
 //             </div>
-           
+
+//             {/* WhatsApp prominent CTA */}
+//             <a
+//               href="https://wa.me/919585085252?text=Hello%2C%20I%20would%20like%20to%20book%20a%20driver%20from%20Hitha%20Tours%20and%20Travels."
+//               className="whatsapp-cta"
+//               target="_blank"
+//               rel="noopener noreferrer"
+//             >
+//               {/* <span>💬</span> */}
+//               <div>
+//                 {/* <strong>Chat on WhatsApp</strong>
+//                 <span>+91 9585085252</span> */}
+//               </div>
+//             </a>
 //           </div>
+
 //           {/* Form */}
 //           <div className="contact-form-wrap reveal-right">
 //             {submitted ? (
 //               <div className="success-msg">
 //                 <span className="success-icon">✅</span>
 //                 <h3>Booking Request Sent!</h3>
-//                 <p>Our team will contact you within 10 minutes. Thank you for choosing Hitha Travels!</p>
+//                 <p>Your email client has opened with the booking details. Our team will contact you within 10 minutes. Thank you for choosing Hitha Travels!</p>
 //               </div>
 //             ) : (
 //               <form className="contact-form" onSubmit={handleSubmit}>
@@ -132,14 +359,13 @@
 //                     <label>Service Required *</label>
 //                     <select name="service" value={form.service} onChange={handleChange} required>
 //                       <option value="">Select a service</option>
-//                       <option> Local Acting Driver</option>
+//                       <option>Local Acting Driver</option>
 //                       <option>Outstation Acting Driver</option>
-//                       <option> Night Duty Driver</option>
+//                       <option>Night Duty Driver</option>
 //                       <option>One-Way Drop</option>
 //                       <option>Event & Wedding Driver</option>
 //                       <option>Corporate & Business Driver</option>
 //                       <option>Monthly / Long-Term Driver</option>
-
 //                     </select>
 //                   </div>
 //                   <div className="form-group full-width">
@@ -169,15 +395,25 @@
 //   );
 // };
 // export default Contact;
-
-
 import React, { useEffect, useRef, useState } from 'react';
 import './Contact.css';
+
 const Contact = () => {
   const sectionRef = useRef(null);
   const [form, setForm] = useState({ name: '', phone: '', service: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+
   useEffect(() => {
+    // Load EmailJS SDK
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js';
+    script.onload = () => {
+      window.emailjs.init('YOUR_EMAILJS_PUBLIC_KEY'); // ← Replace this
+    };
+    document.head.appendChild(script);
+
     const observer = new IntersectionObserver(
       (entries) => entries.forEach(e => {
         if (e.isIntersecting) e.target.classList.add('visible');
@@ -188,28 +424,36 @@ const Contact = () => {
     els?.forEach(el => observer.observe(el));
     return () => observer.disconnect();
   }, []);
+
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
-  const handleSubmit = (e) => {
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
+    setError('');
 
-    const subject = `New Booking Request from ${form.name}`;
-    const body =
-`New Booking Request - Hitha Tours and Travels
-==============================================
-Name    : ${form.name}
-Phone   : ${form.phone}
-Service : ${form.service}
-Message : ${form.message}
-==============================================
-Sent from website contact form.`;
-
-    const mailtoLink = `mailto:hithatourstravels@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.open(mailtoLink, '_blank');
-
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 4000);
-    setForm({ name: '', phone: '', service: '', message: '' });
+    try {
+      await window.emailjs.send(
+        'YOUR_SERVICE_ID',   // ← Replace this
+        'YOUR_TEMPLATE_ID',  // ← Replace this
+        {
+          from_name: form.name,
+          phone: form.phone,
+          service: form.service,
+          message: form.message,
+          to_email: 'hithatourstravels@gmail.com',
+        }
+      );
+      setSubmitted(true);
+      setForm({ name: '', phone: '', service: '', message: '' });
+      setTimeout(() => setSubmitted(false), 5000);
+    } catch (err) {
+      setError('Failed to send. Please call us directly at +91 9585085252.');
+    } finally {
+      setLoading(false);
+    }
   };
+
   const contactInfo = [
     {
       icon: '📞',
@@ -254,7 +498,6 @@ Sent from website contact form.`;
 
   return (
     <section id="contact" className="contact-section" ref={sectionRef}>
-      {/* Top divider */}
       <div className="contact-divider">
         <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
           <path d="M0,0 L1440,40 L1440,60 L0,60 Z" fill="#0A0A0A"/>
@@ -288,7 +531,6 @@ Sent from website contact form.`;
               </div>
             ))}
 
-            {/* Social Links with real URLs */}
             <div className="social-row">
               {socialLinks.map((s, i) => (
                 <a
@@ -306,7 +548,6 @@ Sent from website contact form.`;
               ))}
             </div>
 
-            {/* WhatsApp prominent CTA */}
             <a
               href="https://wa.me/919585085252?text=Hello%2C%20I%20would%20like%20to%20book%20a%20driver%20from%20Hitha%20Tours%20and%20Travels."
               className="whatsapp-cta"
@@ -327,7 +568,7 @@ Sent from website contact form.`;
               <div className="success-msg">
                 <span className="success-icon">✅</span>
                 <h3>Booking Request Sent!</h3>
-                <p>Your email client has opened with the booking details. Our team will contact you within 10 minutes. Thank you for choosing Hitha Travels!</p>
+                <p>We received your details and will call you within 10 minutes. Thank you for choosing Hitha Travels!</p>
               </div>
             ) : (
               <form className="contact-form" onSubmit={handleSubmit}>
@@ -379,9 +620,10 @@ Sent from website contact form.`;
                     ></textarea>
                   </div>
                 </div>
-                <button type="submit" className="submit-btn">
-                  Send Booking Request
-                  <span className="btn-arrow">→</span>
+                {error && <p className="form-error">⚠️ {error}</p>}
+                <button type="submit" className="submit-btn" disabled={loading}>
+                  {loading ? 'Sending...' : 'Send Booking Request'}
+                  {!loading && <span className="btn-arrow">→</span>}
                 </button>
                 <p className="form-note">
                   🔒 Your details are safe with us. We'll never spam you.
