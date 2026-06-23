@@ -1,0 +1,123 @@
+.loader-overlay {
+  position: fixed;
+  inset: 0;
+  background: #0A0A0A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  flex-direction: column;
+}
+
+.loader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Car track */
+.car-track {
+  width: 320px;
+  position: relative;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+.road-line {
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #333 20%, #333 80%, transparent);
+  position: absolute;
+  bottom: 18px;
+}
+
+.road-dashes {
+  width: 100%;
+  height: 2px;
+  background: repeating-linear-gradient(90deg, #F5C518 0, #F5C518 20px, transparent 20px, transparent 40px);
+  animation: roadMove 0.4s linear infinite;
+  position: absolute;
+  bottom: 30px;
+  opacity: 0.5;
+}
+
+.car-wrapper {
+  animation: carDrive 2.5s ease-in-out infinite;
+  display: inline-block;
+}
+
+.car-svg {
+  width: 140px;
+  height: auto;
+  filter: drop-shadow(0 4px 12px rgba(245,197,24,0.3));
+}
+
+/* Logo image */
+.loader-logo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-logo-img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  animation: float 2s ease-in-out infinite;
+  /* Keep original logo colors on dark background */
+  filter: drop-shadow(0 4px 20px rgba(245,197,24,0.25));
+}
+
+/* Brand text */
+.loader-brand {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  letter-spacing: 4px;
+  color: #fff;
+}
+
+.loader-logo-h {
+  color: #F5C518;
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+.loader-logo-rest {
+  font-weight: 700;
+  letter-spacing: 6px;
+}
+.loader-logo-script {
+  display: block;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.1rem;
+  color: #F5C518;
+  letter-spacing: 2px;
+  margin-top: 2px;
+}
+
+/* Dots */
+.loader-dots {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #888;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  font-family: 'Inter', sans-serif;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #F5C518;
+  animation: dotBounce 1.4s ease-in-out infinite;
+}
+
+.dot:nth-child(2) { background: #F5C518; }
+.dot:nth-child(3) { background: #5fbc4a; }
+.dot:nth-child(4) { background: #F5C518; }
+.dot:nth-child(5) { background: #E63946; }
+.dot:nth-child(6) { background: #F5C518; }
+.dot:nth-child(7) { background: #5fbc4a; }
