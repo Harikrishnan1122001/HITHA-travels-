@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './Hero.css';
-import logo from './hitha-logo.png';
+// import logo from './hitha-logo.png';
 
 const Hero = () => {
   const taglineRef = useRef(null);
