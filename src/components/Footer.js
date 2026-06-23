@@ -1,96 +1,9 @@
-// import React from 'react';
-// import './Footer.css';
-// import logo from './hitha-logo.png';
-
-// const Footer = () => {
-//   const year = new Date().getFullYear();
-//   const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-
-//   return (
-//     <footer className="footer">
-//       <div className="footer-top">
-//         <div className="footer-brand">
-//           <div className="footer-logo-row">
-//             <img src={logo} alt="Hitha Logo" className="footer-logo-img" />
-//             <div>
-//               <div className="footer-logo-name">HITHA</div>
-//               <div className="footer-logo-sub">Acting Driver's</div>
-//             </div>
-//           </div>
-//           <p className="footer-about">
-//             Madurai's trusted acting driver service since 2014. Professional drivers, 
-//             outstation cabs, airport transfers & custom tour packages.
-//           </p>
-//           <div className="footer-cert">
-//             <span>🏆 ISO Certified</span>
-//             <span>✅ Government Registered</span>
-//           </div>
-//         </div>
-
-//         <div className="footer-nav">
-//           <h4>Quick Links</h4>
-//           <ul>
-//             {['home', 'about', 'services', 'contact'].map(id => (
-//               <li key={id}>
-//                 <button onClick={() => scrollTo(id)}>
-//                   {id === 'about' ? 'About Us' : id === 'contact' ? 'Contact Us' : id.charAt(0).toUpperCase() + id.slice(1)}
-//                 </button>
-//               </li>
-//             ))}
-//           </ul>
-//         </div>
-
-//         <div className="footer-services">
-//           <h4>Services</h4>
-//           <ul>
-//             {['Local Acting Driver', 'Outstation Acting Driver', 'Night Duty Driver', 'One-Way Drop', 'Event & Wedding Driver', 'Corporate & Business Driver','Monthly / Long-Term Driver'].map(s => (
-//               <li key={s}><span>→ {s}</span></li>
-//             ))}
-//           </ul>
-//         </div>
-
-//         <div className="footer-contact">
-//           <h4>Contact</h4>
-//           <div className="footer-contact-item">
-//             <span>📍</span>
-//             <p>9A, Dindigul Main Rd,<br />Vilangudi, Madurai - 625018</p>
-//           </div>
-//           <div className="footer-contact-item">
-//             <span>📞</span>
-//             <a href="tel:+919876543210">+91 98765 43210</a>
-//           </div>
-//           <div className="footer-contact-item">
-//             <span>✉️</span>
-//             <a href="mailto:info@hithatravels.com">info@hithatravels.com</a>
-//           </div>
-//           <div className="footer-contact-item">
-//             <span>🕐</span>
-//             <p>24/7 Available — No holidays</p>
-//           </div>
-//         </div>
-//       </div>
-
-//       <div className="footer-bottom">
-//         <p>© {year} Hitha Acting Driver's. All rights reserved.</p>
-//         <p>Made with ❤️ in Madurai, Tamil Nadu</p>
-//       </div>
-
-//       <button className="back-to-top" onClick={() => scrollTo('home')} aria-label="Back to top">
-//         ↑
-//       </button>
-//     </footer>
-//   );
-// };
-
-// export default Footer;
 import React from 'react';
 import './Footer.css';
 import logo from './hitha-logo.png';
-
 const Footer = () => {
   const year = new Date().getFullYear();
   const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-
   return (
     <footer className="footer">
       <div className="footer-top">
@@ -111,7 +24,6 @@ const Footer = () => {
             <span>✅ Government Registered</span>
           </div>
         </div>
-
         <div className="footer-nav">
           <h4>Quick Links</h4>
           <ul>
@@ -124,7 +36,6 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-
         <div className="footer-services">
           <h4>Services</h4>
           <ul>
@@ -133,20 +44,19 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-
         <div className="footer-contact">
           <h4>Contact</h4>
-          <div className="footer-contact-item">
+          {/* <div className="footer-contact-item">
             <span>📍</span>
             <p>9A, Dindigul Main Rd,<br />Vilangudi, Madurai - 625018</p>
-          </div>
+          </div> */}
           <div className="footer-contact-item">
             <span>📞</span>
-            <a href="tel:+919876543210">+91 98765 43210</a>
+            <a href="tel:+91 9585085252">+91 9585085252</a>
           </div>
           <div className="footer-contact-item">
             <span>✉️</span>
-            <a href="mailto:info@hithatravels.com">info@hithatravels.com</a>
+            <a href="mailto:hithatourstravels@gmail.com">hithatourstravels@gmail.com</a>
           </div>
           <div className="footer-contact-item">
             <span>🕐</span>
@@ -154,17 +64,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
       <div className="footer-bottom">
         <p>© {year} Hitha Tours and Travels, Madurai — Your Trusted Acting Driver Service.</p>
         <p>Made with ❤️ in Madurai, Tamil Nadu</p>
       </div>
-
       <button className="back-to-top" onClick={() => scrollTo('home')} aria-label="Back to top">
         ↑
       </button>
     </footer>
   );
 };
-
 export default Footer;

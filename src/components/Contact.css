@@ -284,3 +284,18 @@
   .contact-form-wrap { padding: 28px 20px; }
   .form-grid { grid-template-columns: 1fr; }
 }
+
+
+.whatsapp-cta div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.whatsapp-cta strong {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.whatsapp-cta span {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}

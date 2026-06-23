@@ -333,3 +333,17 @@
   .hero-logo-title { flex-direction: column; gap: 12px; }
   .hero-logo-img { width: 70px; height: 70px; }
 }
+.hero-phone-big {
+  display: block;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #f5f0dd;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  margin: 8px 0 16px;
+  transition: opacity 0.2s;
+}
+
+.hero-phone-big:hover {
+  opacity: 0.8;
+}

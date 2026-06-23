@@ -8,18 +8,14 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import WhyChooseUs from './components/WhyChooseUs';
 import './App.css';
-
 function App() {
   const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     // Simulate loading: 3.2 seconds
     const timer = setTimeout(() => setLoading(false), 3200);
     return () => clearTimeout(timer);
   }, []);
-
   if (loading) return <Loader />;
-
   return (
     <div className="App">
       <Navbar />
@@ -31,10 +27,9 @@ function App() {
         <Contact />
       </main>
       <Footer />
-
       {/* WhatsApp floating button */}
       <a
-        href="https://wa.me/919876543210?text=Hello%20Hitha%20Acting%20Drivers!%20I%20need%20a%20booking."
+        href="https://wa.me/919585085252?text=Hello%20Hitha%20Acting%20Drivers!%20I%20need%20a%20booking."
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-fab"
@@ -48,5 +43,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

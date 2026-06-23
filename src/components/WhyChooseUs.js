@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import './WhyChooseUs.css';
-
 const reasons = [
   { icon: '🎓', title: 'Experienced Drivers', desc: 'All our drivers are trained, licensed, and experienced in handling various vehicle types.' },
   { icon: '✅', title: 'Verified & Trustworthy', desc: 'Every driver undergoes background verification before assignment.' },
@@ -8,10 +7,8 @@ const reasons = [
   { icon: '⏰', title: 'On-Time Service', desc: 'We value punctuality and ensure drivers reach you as scheduled.' },
   { icon: '💰', title: 'Affordable Pricing', desc: 'Transparent rates with no hidden charges.' },
 ];
-
 const WhyChooseUs = () => {
   const sectionRef = useRef(null);
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => entries.forEach(e => {
@@ -23,9 +20,7 @@ const WhyChooseUs = () => {
     els?.forEach(el => observer.observe(el));
     return () => observer.disconnect();
   }, []);
-
   const scrollToContact = () => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-
   return (
     <section id="why-us" className="why-us-section" ref={sectionRef}>
       <div className="why-us-container">
@@ -47,7 +42,6 @@ const WhyChooseUs = () => {
             your vehicle, our driver, your journey.
           </p>
         </div>
-
         {/* Why Choose Us */}
         <div className="reasons-grid">
           {reasons.map((r, i) => (
@@ -58,7 +52,6 @@ const WhyChooseUs = () => {
             </div>
           ))}
         </div>
-
         {/* Quick Booking Note */}
         <div className="quick-booking-note reveal">
           <p>
@@ -74,5 +67,4 @@ const WhyChooseUs = () => {
     </section>
   );
 };
-
 export default WhyChooseUs;

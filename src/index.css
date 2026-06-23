@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 :root {
   --gold: #F5C518;
   --black: #0A0A0A;
@@ -14,31 +13,25 @@
   --light-grey: #E8E8E8;
   --accent-red: #E63946;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   font-family: 'Inter', sans-serif;
   background: var(--black);
   color: var(--white);
   overflow-x: hidden;
 }
-
 .display-font {
   font-family: 'Playfair Display', serif;
 }
-
 .script-font {
   font-family: 'Dancing Script', cursive;
 }
-
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--black); }
 ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
-
 /* Animations */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(40px); }
@@ -81,11 +74,9 @@ body {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
 }
-
 .animate-fadeInUp { animation: fadeInUp 0.7s ease forwards; }
 .animate-fadeInLeft { animation: fadeInLeft 0.7s ease forwards; }
 .animate-fadeInRight { animation: fadeInRight 0.7s ease forwards; }
-
 .reveal {
   opacity: 0;
   transform: translateY(40px);
