@@ -70,7 +70,7 @@ const About = () => {
             </h2>
           </div>
           <p className="about-text reveal" style={{transitionDelay: '0.1s'}}>
-            Hitha Tours and Travels is a Madurai-based service provider specializing in acting
+            Madurai  Acting Drivers is a Madurai-based service provider specializing in acting
             driver services. We were established to address a simple but common need — people
             who own a vehicle but require a skilled, trustworthy driver to operate it for them,
             whether due to long travel fatigue, lack of time, medical reasons, or personal

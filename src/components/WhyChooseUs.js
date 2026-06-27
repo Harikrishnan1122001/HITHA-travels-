@@ -31,7 +31,7 @@ const WhyChooseUs = () => {
             Sometimes You Need <span className="text-gold">Someone Else Behind the Wheel</span>
           </h2>
           <p className="welcome-text">
-            At Hitha Tours and Travels, we understand that sometimes you need someone else
+            At Madurai  Acting Drivers, we understand that sometimes you need someone else
             behind the wheel — whether you're returning from a long event, travelling overnight,
             attending a function where you'd rather not drive, or simply need a dependable driver
             for your own car on a daily or trip basis.
@@ -56,7 +56,7 @@ const WhyChooseUs = () => {
         <div className="quick-booking-note reveal">
           <p>
             Need a driver for a wedding, outstation trip, late-night return, or daily office
-            commute? Contact Hitha Tours and Travels and we will arrange a suitable acting
+            commute? Contact Madurai  Acting Drivers and we will arrange a suitable acting
             driver promptly.
           </p>
           <button className="btn-primary" onClick={scrollToContact}>

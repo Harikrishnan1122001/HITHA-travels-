@@ -57,7 +57,7 @@ const Hero = () => {
         </h2>
         
         <p className="hero-desc animate-fadeInUp" style={{animationDelay: '0.6s'}}>
-          Hitha Tours and Travels provides professional, well-trained acting drivers for your
+          Madurai  Acting Drivers provides professional, well-trained acting drivers for your
           personal and commercial vehicles — for local trips, outstation journeys, and every
           occasion in between.
         </p>

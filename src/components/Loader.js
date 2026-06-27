@@ -34,9 +34,9 @@ const Loader = () => {
           <div className="road-dashes"></div>
         </div>
         <div className="loader-brand">
-          <span className="loader-logo-h">H</span>
-          <span className="loader-logo-rest">ITHA</span>
-          <span className="loader-logo-script"> Acting Driver's</span>
+          <span className="loader-logo-h">M</span>
+          <span className="loader-logo-rest">ADURAI</span>
+          <span className="loader-logo-script"> Acting Drivers</span>
         </div>
         <div className="loader-dots">
           <span>Loading</span>

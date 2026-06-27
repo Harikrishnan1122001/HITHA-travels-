@@ -65,7 +65,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>© {year} Hitha Tours and Travels, Madurai — Your Trusted Acting Driver Service.</p>
+        <p>© {year} Madurai  Acting Drivers, Madurai — Your Trusted Acting Driver Service.</p>
         <p>Made with ❤️ in Madurai, Tamil Nadu</p>
       </div>
       <button className="back-to-top" onClick={() => scrollTo('home')} aria-label="Back to top">
