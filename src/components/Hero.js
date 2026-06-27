@@ -42,9 +42,9 @@ const Hero = () => {
           {/* <img src={logo} alt="Hitha Logo" className="hero-logo-img" /> */}
           <div>
             <h1 className="hero-title">
-              <span className="title-gold">HITHA</span>
+              <span className="title-gold">Madurai</span>
             </h1>
-            <p className="hero-subtitle-brand">Tours and Travels</p>
+            <p className="hero-subtitle-brand">Acting Drivers</p>
           </div>
         </div>
         {/* <p ref={taglineRef} className="hero-tagline animate-fadeInUp" style={{animationDelay: '0.4s'}}></p> */}
