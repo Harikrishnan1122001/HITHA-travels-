@@ -9,10 +9,10 @@ const Footer = () => {
       <div className="footer-top">
         <div className="footer-brand">
           <div className="footer-logo-row">
-            <img src={logo} alt="Hitha Logo" className="footer-logo-img" />
+            <img src={logo} alt="Madurai Logo" className="footer-logo-img" />
             <div>
-              <div className="footer-logo-name">HITHA</div>
-              <div className="footer-logo-sub">Tours and Travels</div>
+              <div className="footer-logo-name">Madurai</div>
+              <div className="footer-logo-sub">Acting Drivers</div>
             </div>
           </div>
           <p className="footer-about">
