@@ -330,8 +330,8 @@ const Contact = () => {
     {
       icon: '✉️',
       title: 'Email',
-      lines: ['Madurai  Acting Drivers@gmail.com'],
-      link: 'mailto:Madurai  Acting Drivers@gmail.com',
+      lines: ['hithatourstravels@gmail.com'],
+      link: 'mailto:hithatourstravels@gmail.com',
     },
     {
       icon: '🕐',
@@ -430,7 +430,7 @@ const Contact = () => {
               <div className="success-msg">
                 <span className="success-icon">✅</span>
                 <h3>Booking Request Sent!</h3>
-                <p>Your booking email has been sent to Madurai  Acting Drivers@gmail.com. We will contact you within 10 minutes. Thank you for choosing Hitha Travels!</p>
+                <p>Your booking email has been sent to hithatourstravels@gmail.com. We will contact you within 10 minutes. Thank you for choosing Hitha Travels!</p>
               </div>
             ) : (
               <form className="contact-form" onSubmit={handleSubmit}>
