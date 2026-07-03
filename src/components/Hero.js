@@ -49,8 +49,8 @@ const Hero = () => {
         </div>
         {/* <p ref={taglineRef} className="hero-tagline animate-fadeInUp" style={{animationDelay: '0.4s'}}></p> */}
          <p ref={taglineRef} className="hero-tagline animate-fadeInUp" style={{animationDelay: '0.4s'}}></p>
-        <a href="tel:9585085252" className="hero-phone-big animate-fadeInUp" style={{animationDelay: '0.5s'}}>
-          9585085252
+        <a href="tel:9344270077" className="hero-phone-big animate-fadeInUp" style={{animationDelay: '0.5s'}}>
+          9344270077
         </a>
         <h2 className="hero-headline animate-fadeInUp" style={{animationDelay: '0.5s'}}>
           Reliable Acting Driver Service in Madurai

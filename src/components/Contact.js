@@ -11,7 +11,7 @@
 // const EMAILJS_TEMPLATE_ID = '-xdIrXDUK6gZanmCePapr';
 // // ─────────────────────────────────────────────
 
-// const WHATSAPP_NUMBER = '919585085252';
+// const WHATSAPP_NUMBER = '919344270077';
 
 // const Contact = () => {
 //   const sectionRef = useRef(null);
@@ -84,8 +84,8 @@
 //     {
 //       icon: '📞',
 //       title: 'Phone',
-//       lines: ['+91 9585085252'],
-//       link: 'tel:+919585085252',
+//       lines: ['+91 9344270077'],
+//       link: 'tel:+919344270077',
 //     },
 //     {
 //       icon: '✉️',
@@ -213,7 +213,7 @@
 //                       name="phone"
 //                       value={form.phone}
 //                       onChange={handleChange}
-//                       placeholder="+91 9585085252"
+//                       placeholder="+91 9344270077"
 //                       required
 //                     />
 //                   </div>
@@ -267,7 +267,7 @@ const EMAILJS_PUBLIC_KEY  = '5koff7Zp6wLXda_Ct';
 const EMAILJS_SERVICE_ID  = 'service_bf0a5w5';
 const EMAILJS_TEMPLATE_ID = 'template_hyfr7po';
 
-const WHATSAPP_NUMBER = '919585085252';
+const WHATSAPP_NUMBER = '919344270077';
 
 const Contact = () => {
   const sectionRef = useRef(null);
@@ -314,7 +314,7 @@ const Contact = () => {
       setTimeout(() => setSubmitted(false), 6000);
     } catch (err) {
       console.error('EmailJS error:', err);
-      setError('Failed to send. Please call +91 9585085252 directly.');
+      setError('Failed to send. Please call +91 9344270077 directly.');
     } finally {
       setLoading(false);
     }
@@ -324,8 +324,8 @@ const Contact = () => {
     {
       icon: '📞',
       title: 'Phone',
-      lines: ['+91 9585085252'],
-      link: 'tel:+919585085252',
+      lines: ['+91 9344270077'],
+      link: 'tel:+919344270077',
     },
     {
       icon: '✉️',
@@ -454,7 +454,7 @@ const Contact = () => {
                       name="phone"
                       value={form.phone}
                       onChange={handleChange}
-                      placeholder="+91 9585085252"
+                      placeholder="+91 9344270077"
                       required
                     />
                   </div>

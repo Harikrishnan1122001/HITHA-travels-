@@ -52,7 +52,7 @@ const Footer = () => {
           </div> */}
           <div className="footer-contact-item">
             <span>📞</span>
-            <a href="tel:+91 9585085252">+91 9585085252</a>
+            <a href="tel:+91 9344270077">+91 9344270077</a>
           </div>
           <div className="footer-contact-item">
             <span>✉️</span>
