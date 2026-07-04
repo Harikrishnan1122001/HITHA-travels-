@@ -76,7 +76,7 @@ const Hero = () => {
         {[
           { num: '500+', label: 'Happy Clients' },
           { num: '24/7', label: 'Available' },
-          { num: '10+', label: 'Years Exp.' },
+          { num: '9+', label: 'Years Exp.' },
           { num: '50+', label: 'Verified Drivers' },
         ].map((s, i) => (
           <div key={i} className="stat-item">
