@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import logo from './hitha-logo.png';
+import logo from './madurai-logo.png.PNG';
 const Footer = () => {
   const year = new Date().getFullYear();
   const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
