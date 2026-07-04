@@ -24,10 +24,10 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-logo" onClick={() => scrollTo('home')}>
-        <img src={logo} alt="Madurai  Acting Drivers Logo" className="footer-logo-img" />
+        <img src={logo} alt="Madurai  Acting Drivers Logo" className="nav-logo-img" />
         <div className="nav-logo-text">
-          <span className="logo-name">Madurai</span>
-          <span className="logo-sub">Acting Drivers</span>
+          {/* <span className="logo-name">Madurai</span>
+          <span className="logo-sub">Acting Drivers</span> */}
         </div>
       </div>
       <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>

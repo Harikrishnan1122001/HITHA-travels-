@@ -25,22 +25,15 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
   text-decoration: none;
 }
 
 .nav-logo-img {
-  height: 52px;
-  width: 52px;
+  height: 100px;
+  width: 100px;
   object-fit: contain;
-  filter: brightness(0) invert(1);
-  transition: filter 0.3s ease;
   border-radius: 8px;
-}
-
-/* On scrolled bg, show logo with slight gold tint */
-.navbar.scrolled .nav-logo-img {
-  filter: brightness(0) saturate(100%) invert(80%) sepia(60%) saturate(500%) hue-rotate(5deg);
 }
 
 .nav-logo-text {
@@ -51,7 +44,7 @@
 
 .logo-name {
   font-family: 'Playfair Display', serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 900;
   color: #F5C518;
   letter-spacing: 3px;
@@ -59,7 +52,7 @@
 
 .logo-sub {
   font-family: 'Dancing Script', cursive;
-  font-size: 0.82rem;
+  font-size: 1.05rem;
   color: rgba(255,255,255,0.75);
   letter-spacing: 1px;
 }
@@ -175,6 +168,7 @@
   .nav-links.open { right: 0; }
   .nav-btn { font-size: 1.1rem; padding: 14px 0; }
   .nav-cta { margin: 16px 0 0; width: 100%; }
-  .nav-logo-img { height: 42px; width: 42px; }
-  .logo-name { font-size: 1.2rem; }
+  .nav-logo-img { height: 56px; width: 56px; }
+  .logo-name { font-size: 1.4rem; }
+  .logo-sub { font-size: 0.85rem; }
 }
