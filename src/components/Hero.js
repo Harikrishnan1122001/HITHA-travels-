@@ -74,7 +74,7 @@ const Hero = () => {
       {/* ===== Stats bar ===== */}
       <div className="hero-stats">
         {[
-          { num: '500+', label: 'Happy Clients' },
+          { num: '600+', label: 'Happy Clients' },
           { num: '24/7', label: 'Available' },
           { num: '9+', label: 'Years Exp.' },
           { num: '50+', label: 'Verified Drivers' },
