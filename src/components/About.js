@@ -56,7 +56,7 @@ const About = () => {
               </g>
             </svg>
             <div className="about-badge">
-              <span className="badge-num">10+</span>
+              <span className="badge-num">9+</span>
               <span className="badge-text">Years of<br/>Excellence</span>
             </div>
           </div>
