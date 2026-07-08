@@ -7,6 +7,8 @@ import Services from './components/Services';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import WhyChooseUs from './components/WhyChooseUs';
+import Faq from './components/Faq';
+
 import './App.css';
 function App() {
   const [loading, setLoading] = useState(true);
@@ -24,6 +26,7 @@ function App() {
         <About />
         <Services />
         <WhyChooseUs />
+        <Faq />
         <Contact />
       </main>
       <Footer />
